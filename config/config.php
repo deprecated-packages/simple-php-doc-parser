@@ -16,7 +16,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         ->autowire()
         ->autoconfigure();
 
-    $services->load('Rector\SimplePhpDocParser\\', __DIR__ . '/../src');
+    $services->load('Symplify\SimplePhpDocParser\\', __DIR__ . '/../src');
 
     $services->set(PhpDocParser::class);
     $services->set(Lexer::class);

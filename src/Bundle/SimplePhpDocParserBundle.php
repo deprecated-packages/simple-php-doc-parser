@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Rector\SimplePhpDocParser\Bundle;
+namespace Symplify\SimplePhpDocParser\Bundle;
 
-use Rector\SimplePhpDocParser\Bundle\DependencyInjection\Extension\SimplePhpDocParserExtension;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symplify\SimplePhpDocParser\Bundle\DependencyInjection\Extension\SimplePhpDocParserExtension;
 
 final class SimplePhpDocParserBundle extends Bundle
 {

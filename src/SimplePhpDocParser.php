@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Rector\SimplePhpDocParser;
+namespace Symplify\SimplePhpDocParser;
 
 use PHPStan\PhpDocParser\Lexer\Lexer;
 use PHPStan\PhpDocParser\Parser\PhpDocParser;
 use PHPStan\PhpDocParser\Parser\TokenIterator;
-use Rector\SimplePhpDocParser\ValueObject\Ast\PhpDoc\SimplePhpDocNode;
+use Symplify\SimplePhpDocParser\ValueObject\Ast\PhpDoc\SimplePhpDocNode;
 
 /**
- * @see \Rector\SimplePhpDocParser\Tests\SimplePhpDocParser\SimplePhpDocParserTest
+ * @see \Symplify\SimplePhpDocParser\Tests\SimplePhpDocParser\SimplePhpDocParserTest
  */
 final class SimplePhpDocParser
 {

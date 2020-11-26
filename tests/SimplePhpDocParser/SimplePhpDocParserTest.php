@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Rector\SimplePhpDocParser\Tests\SimplePhpDocParser;
+namespace Symplify\SimplePhpDocParser\Tests\SimplePhpDocParser;
 
-use Rector\Core\HttpKernel\RectorKernel;
-use Rector\SimplePhpDocParser\SimplePhpDocParser;
-use Rector\SimplePhpDocParser\ValueObject\Ast\PhpDoc\SimplePhpDocNode;
 use Symplify\PackageBuilder\Testing\AbstractKernelTestCase;
+use Symplify\SimplePhpDocParser\SimplePhpDocParser;
+use Symplify\SimplePhpDocParser\Tests\HttpKernel\SimplePhpDocParserKernel;
+use Symplify\SimplePhpDocParser\ValueObject\Ast\PhpDoc\SimplePhpDocNode;
 use Symplify\SmartFileSystem\SmartFileInfo;
 
 final class SimplePhpDocParserTest extends AbstractKernelTestCase
@@ -19,7 +19,7 @@ final class SimplePhpDocParserTest extends AbstractKernelTestCase
 
     protected function setUp(): void
     {
-        $this->bootKernel(RectorKernel::class);
+        $this->bootKernel(SimplePhpDocParserKernel::class);
         $this->simplePhpDocParser = self::$container->get(SimplePhpDocParser::class);
     }
 

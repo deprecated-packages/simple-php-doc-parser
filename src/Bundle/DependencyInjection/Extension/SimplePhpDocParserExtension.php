@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Rector\SimplePhpDocParser\Bundle\DependencyInjection\Extension;
+namespace Symplify\SimplePhpDocParser\Bundle\DependencyInjection\Extension;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
